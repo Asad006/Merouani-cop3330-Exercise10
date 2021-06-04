@@ -27,7 +27,7 @@ public class App {
     }
 
     private static void displayResults(float total, float tax) {
-        System.out.println("Tax: $" + tax + "\nTotal: $" + total);
+        System.out.printf("Tax: $%.2f\nTotal: $%.2f", tax, total);
     }
 
     private static float addSalesTax(float subTotal) {
@@ -53,13 +53,13 @@ public class App {
 
 
         for (int i = 0; i < 3; i++) {
-            System.out.printf("Enter the price of item %d: \n",i+1);
+            System.out.printf("Enter the price of item %d: \n", i + 1);
             price = Float.parseFloat(scanner.nextLine());
 
-            System.out.printf("Enter the quantity of item %d: \n",i+1);
-            quqntity=Integer.parseInt(scanner.nextLine());
+            System.out.printf("Enter the quantity of item %d: \n", i + 1);
+            quqntity = Integer.parseInt(scanner.nextLine());
 
-            item[i]=new Item(price,quqntity);
+            item[i] = new Item(price, quqntity);
         }
         return item;
     }
