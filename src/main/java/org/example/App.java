@@ -40,8 +40,6 @@ public class App {
 
         for (int i = 0; i < 3; i++) {
             subtotal += totalItems[i].getPrice() * totalItems[i].getQuantity();
-
-
         }
         return subtotal;
     }
